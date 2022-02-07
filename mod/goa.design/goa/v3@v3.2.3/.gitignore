@@ -1,0 +1,17 @@
+# Golang tools artifacts
+**/*.coverprofile
+**/*.test
+
+# Executables and test outputs
+cmd/goa/goa
+
+# Editor / IDEs cruft
+.idea/
+*.iml
+.vscode/
+*~
+*.orig
+*.swp
+
+# Go module cruft
+go.sum

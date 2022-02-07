@@ -1,0 +1,93 @@
+INFO  2018/09/23 09:45:49        command_config.go:120: Checking import path /tmp/release/v0.20.0/go/src/github.com/revel/cron with /tmp/release/v0.20.0/go
+INFO  2018/09/23 09:45:49        command_config.go:129: Updated import path                     path=github.com/revel/cron 
+INFO  2018/09/23 09:45:49        command_config.go:136: Returned import path                    path=github.com/revel/cron buildpath=/tmp/release/v0.20.0/go 
+INFO  2018/09/23 09:45:49        version.go:64: Fullpath to revel                       /tmp/release/v0.20.0/go/src/github.com/revel/revel=nil LOG15_ERROR="Normalized odd number of arguments by adding nil" 
+INFO  2018/09/23 09:45:49          revel.go:82: Command line options failed             error="the required flag `-a, --application-path' was not specified" 
+INFO  2018/09/23 09:45:49        command_config.go:136: Returned import path                    path=github.com/revel/examples/booking buildpath=/tmp/release/v0.20.0/go 
+INFO  2018/09/23 09:45:49         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/09/23 09:45:49         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/booking/app 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/booking/app/controllers 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/booking/app/jobs 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/booking/app/models 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/orm/gorp/app 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/orm/gorp/app/controllers 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/jobs/app/controllers 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/jobs/app/jobs 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/static/app/model 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/testrunner/app 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/09/23 09:45:49        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/booking/tests 
+INFO  2018/09/23 09:45:49         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/09/23 09:45:49         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/09/23 09:45:49         build.go:116: No vendor folder detected, not using dependency manager to import files
+INFO  2018/09/23 09:45:49         build.go:194: Exec:                                   args="[/home/notzippy/.gvm/gos/go1.9.1/bin/go build -i -ldflags -X github.com/revel/examples/booking/app.AppVersion= -X github.com/revel/examples/booking/app.BuildTime=2018-09-23T16:45:49Z -tags gorp -o /tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/booking/booking github.com/revel/examples/booking/app/tmp]" 
+INFO  2018/09/23 09:45:52         build.go:199: Build successful continuing             
+INFO  2018/09/23 09:45:52            app.go:66: Exec app:                               path=/tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/booking/booking args="[/tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/booking/booking -port=9000 -importPath=github.com/revel/examples/booking -runMode={\"mode\":\"dev\",\"testModeFlag\":true, \"specialUseFlag\":false}]" 
+INFO  2018/09/23 09:45:52          test.go:135: Testing Booking example (github.com/revel/examples/booking) in dev mode URL http://localhost:9000 
+
+INFO  2018/09/23 09:45:52            app.go:99: Killing revel server pid                pid=18835 
+INFO  2018/09/23 09:45:52          revel.go:82: Command line options failed             error="the required flag `-a, --application-path' was not specified" 
+INFO  2018/09/23 09:45:52        command_config.go:136: Returned import path                    path=github.com/revel/examples/chat buildpath=/tmp/release/v0.20.0/go 
+INFO  2018/09/23 09:45:52         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/09/23 09:45:52         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/09/23 09:45:52        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/chat/app/chatroom 
+INFO  2018/09/23 09:45:52        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/chat/app/controllers 
+INFO  2018/09/23 09:45:52        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/09/23 09:45:52        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/static/app/model 
+INFO  2018/09/23 09:45:52        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/testrunner/app 
+INFO  2018/09/23 09:45:52        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/09/23 09:45:52        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/chat/tests 
+INFO  2018/09/23 09:45:52         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/09/23 09:45:52         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/09/23 09:45:52         build.go:116: No vendor folder detected, not using dependency manager to import files
+INFO  2018/09/23 09:45:52         build.go:194: Exec:                                   args="[/home/notzippy/.gvm/gos/go1.9.1/bin/go build -i -ldflags -X github.com/revel/examples/chat/app.AppVersion= -X github.com/revel/examples/chat/app.BuildTime=2018-09-23T16:45:52Z -tags  -o /tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/chat/chat github.com/revel/examples/chat/app/tmp]" 
+INFO  2018/09/23 09:45:53         build.go:199: Build successful continuing             
+INFO  2018/09/23 09:45:53            app.go:66: Exec app:                               path=/tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/chat/chat args="[/tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/chat/chat -port=9000 -importPath=github.com/revel/examples/chat -runMode={\"mode\":\"dev\",\"testModeFlag\":true, \"specialUseFlag\":false}]" 
+INFO  2018/09/23 09:45:53          test.go:135: Testing chat (github.com/revel/examples/chat) in dev mode URL http://localhost:9000 
+
+INFO  2018/09/23 09:45:56            app.go:99: Killing revel server pid                pid=18932 
+INFO  2018/09/23 09:45:56          revel.go:82: Command line options failed             error="the required flag `-a, --application-path' was not specified" 
+INFO  2018/09/23 09:45:56        command_config.go:136: Returned import path                    path=github.com/revel/examples/orm/gorm buildpath=/tmp/release/v0.20.0/go 
+INFO  2018/09/23 09:45:56         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/09/23 09:45:56         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/09/23 09:45:56        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/orm/gorm/app 
+INFO  2018/09/23 09:45:56        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/orm/gorm/app/controllers 
+INFO  2018/09/23 09:45:56        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/orm/gorm/app/models 
+INFO  2018/09/23 09:45:56        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/orm/gorm/app 
+INFO  2018/09/23 09:45:56        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/orm/gorm/app/controllers 
+INFO  2018/09/23 09:45:56        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/09/23 09:45:56        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/static/app/model 
+INFO  2018/09/23 09:45:56        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/testrunner/app 
+INFO  2018/09/23 09:45:56        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/09/23 09:45:56        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/orm/gorm/tests 
+INFO  2018/09/23 09:45:56         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/09/23 09:45:56         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/09/23 09:45:56         build.go:116: No vendor folder detected, not using dependency manager to import files
+INFO  2018/09/23 09:45:56         build.go:194: Exec:                                   args="[/home/notzippy/.gvm/gos/go1.9.1/bin/go build -i -ldflags -X github.com/revel/examples/orm/gorm/app.AppVersion= -X github.com/revel/examples/orm/gorm/app.BuildTime=2018-09-23T16:45:56Z -tags  -o /tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/orm/gorm/gorm github.com/revel/examples/orm/gorm/app/tmp]" 
+INFO  2018/09/23 09:45:58         build.go:199: Build successful continuing             
+INFO  2018/09/23 09:45:58            app.go:66: Exec app:                               path=/tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/orm/gorm/gorm args="[/tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/orm/gorm/gorm -port=9000 -importPath=github.com/revel/examples/orm/gorm -runMode={\"mode\":\"dev\",\"testModeFlag\":true, \"specialUseFlag\":false}]" 
+INFO  2018/09/23 09:45:58          test.go:135: Testing gorm (github.com/revel/examples/orm/gorm) in dev mode URL http://localhost:9000 
+
+INFO  2018/09/23 09:45:58            app.go:99: Killing revel server pid                pid=19069 
+INFO  2018/09/23 09:45:58          revel.go:82: Command line options failed             error="the required flag `-a, --application-path' was not specified" 
+INFO  2018/09/23 09:45:58        command_config.go:136: Returned import path                    path=github.com/revel/examples/upload buildpath=/tmp/release/v0.20.0/go 
+INFO  2018/09/23 09:45:58         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/09/23 09:45:58         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/09/23 09:45:58        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/upload/app 
+INFO  2018/09/23 09:45:58        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/upload/app/controllers 
+INFO  2018/09/23 09:45:58        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/static/app/controllers 
+INFO  2018/09/23 09:45:58        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/static/app/model 
+INFO  2018/09/23 09:45:58        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/testrunner/app 
+INFO  2018/09/23 09:45:58        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/modules/testrunner/app/controllers 
+INFO  2018/09/23 09:45:58        reflect.go:169: Exaimining files in path                package=/tmp/release/v0.20.0/go/src/github.com/revel/examples/upload/tests 
+INFO  2018/09/23 09:45:58         build.go:301: Cleaning dir                            dir=tmp 
+INFO  2018/09/23 09:45:58         build.go:301: Cleaning dir                            dir=routes 
+INFO  2018/09/23 09:45:58         build.go:116: No vendor folder detected, not using dependency manager to import files
+INFO  2018/09/23 09:45:58         build.go:194: Exec:                                   args="[/home/notzippy/.gvm/gos/go1.9.1/bin/go build -i -ldflags -X github.com/revel/examples/upload/app.AppVersion= -X github.com/revel/examples/upload/app.BuildTime=2018-09-23T16:45:58Z -tags  -o /tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/upload/upload github.com/revel/examples/upload/app/tmp]" 
+INFO  2018/09/23 09:45:59         build.go:199: Build successful continuing             
+INFO  2018/09/23 09:45:59            app.go:66: Exec app:                               path=/tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/upload/upload args="[/tmp/release/v0.20.0/go/bin/revel.d/github.com/revel/examples/upload/upload -port=9000 -importPath=github.com/revel/examples/upload -runMode={\"mode\":\"dev\",\"testModeFlag\":true, \"specialUseFlag\":false}]" 
+INFO  2018/09/23 09:45:59          test.go:135: Testing upload (github.com/revel/examples/upload) in dev mode URL http://localhost:9000 
+
+INFO  2018/09/23 09:46:02            app.go:99: Killing revel server pid                pid=19177 

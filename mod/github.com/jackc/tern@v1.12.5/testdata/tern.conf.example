@@ -1,0 +1,13 @@
+[database]
+# host is required (network host or path to Unix domain socket)
+host = /var/run/postgresql
+# port = 5432
+# database is required
+database = tern_test
+# user defaults to OS user
+# user =
+# version_table = public.schema_version
+
+[data]
+# Any fields in the data section are available in migration templates
+# prefix = foo

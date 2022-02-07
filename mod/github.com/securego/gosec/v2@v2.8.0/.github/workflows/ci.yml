@@ -1,0 +1,69 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  golangci:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v2
+        continue-on-error: true
+        with:
+          version: latest
+  tests-go-1-16:
+    runs-on: ubuntu-latest
+    env:
+      GO111MODULE: on
+    steps:
+      - name: Checkout Source 
+        uses: actions/checkout@v2
+      - name: Run Tests
+        uses: cedrickring/golang-action@1.7.0
+        with:
+          args: make test
+  tests-go-1-15:
+    runs-on: ubuntu-latest
+    env:
+      GO111MODULE: on
+    steps:
+      - name: Checkout Source 
+        uses: actions/checkout@v2
+      - name: Run Tests
+        uses: cedrickring/golang-action/go1.15@1.7.0
+        with:
+          args: make test
+  tests-go-1-14:
+    runs-on: ubuntu-latest
+    env:
+      GO111MODULE: on
+    steps:
+      - name: Checkout Source 
+        uses: actions/checkout@v2
+      - name: Run Tests
+        uses: cedrickring/golang-action/go1.14@1.7.0
+        with:
+          args: make test
+  coverage:
+    needs: [tests-go-1-16, tests-go-1-15, tests-go-1-14]
+    runs-on: ubuntu-latest
+    env:
+      GO111MODULE: on
+    steps:
+      - name: Checkout Source 
+        uses: actions/checkout@v2
+      - name: Create Test Coverage
+        uses: cedrickring/golang-action@1.7.0
+        with:
+          args: make test-coverage
+      - name: Upload Test Coverage
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
